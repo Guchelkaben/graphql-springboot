@@ -1,0 +1,14 @@
+type Query {
+    fetchPokemonByName(name: String!) : Pokemon
+}
+
+type Pokemon {
+    name: String!
+    pokemonType : PokemonType
+}
+
+enum PokemonType {
+    fire,
+    water,
+    grass
+}

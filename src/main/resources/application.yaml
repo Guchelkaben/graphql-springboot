@@ -1,0 +1,11 @@
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+
+graphiql:
+  endpoint:
+    graphql: /graphql
+  mapping: /graphiql
+server:
+  port: 8080
