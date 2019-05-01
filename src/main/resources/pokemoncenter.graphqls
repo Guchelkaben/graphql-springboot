@@ -1,5 +1,6 @@
 type Query {
     fetchPokemonByName(name: String!) : Pokemon
+    fetchAllPokemons(skip: Int = 0, first: Int = 0) : [Pokemon]
 }
 
 type Mutation {
@@ -12,6 +13,7 @@ input PokemonInput {
 }
 
 type Pokemon {
+    id: ID!
     name: String!
     pokemonType : PokemonType
 }
